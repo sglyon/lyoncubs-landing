@@ -1,3 +1,9 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://lyoncubs.me'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'LyonCubs'
+description = "Lyons building awesome things"
+theme = 'hermit'
+
+
+[params]
+homeSubtitle = "Lyons building awesome things"
