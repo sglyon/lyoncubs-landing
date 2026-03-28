@@ -44,6 +44,9 @@
 				{{ partialCached "menu.html" . }}
 			</nav>
 		</div>
-		<div id="home-footer">{{- if templates.Exists "partials/index-footer.html" -}}{{- partialCached "index-footer.html" . -}}{{- else -}}{{- partial "footer.html" . -}}{{- end -}}</div>
+		<div id="home-footer">
+			<nav aria-label="Legal"><a href="/privacy/">Privacy Policy</a></nav>
+			{{- if templates.Exists "partials/index-footer.html" -}}{{- partialCached "index-footer.html" . -}}{{- else -}}{{- partial "footer.html" . -}}{{- end -}}
+		</div>
 	</div>
 {{ end }}
